@@ -1,7 +1,4 @@
 def prime?(number)
-  if number > 1 && 2 > number > number ** 0.5
-    true
-  else
-    false
-  end
+  return false if n < 2
+  (2..number/2).none? {|i| number % i == 0}
 end
